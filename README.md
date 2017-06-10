@@ -70,6 +70,8 @@ class ViewController : UIViewController {
 
 If you're interested in contributing to `ZKCarousel`, please fork the repository and submit a pull request. All contributions are welcome and encouraged! :)
 
+For all bug reports, feature requests, etc. please submit an issue to the repository.
+
 ## License
 
 ZKCarousel is available under the MIT license. See the LICENSE file for more info.
