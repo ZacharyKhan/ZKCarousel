@@ -66,9 +66,9 @@ class ViewController : UIViewController {
 
 ```
 
-## Author
+## Contributions
 
-Zachary Khan
+If you're interested in contributing to `ZKCarousel`, please fork the repository and submit a pull request. All contributions are welcome and encouraged! :)
 
 ## License
 
