@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,14 +41,26 @@
                                     <constraint firstAttribute="width" secondItem="sGV-qz-cNl" secondAttribute="height" multiplier="15:14" id="oqo-3k-fWd"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZKCarousel can be used however you'd like. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkl-ck-pPf">
+                                <rect key="frame" x="47" y="373" width="281" height="45.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="PWQ-y8-hVy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.71809565355329952" green="0.71809565355329952" blue="0.71809565355329952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wkl-ck-pPf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="31" id="36B-f7-TSV"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="TXn-9S-7e1" secondAttribute="bottom" constant="59" id="3e1-3d-rPe"/>
                             <constraint firstItem="TXn-9S-7e1" firstAttribute="top" secondItem="sGV-qz-cNl" secondAttribute="bottom" constant="208" id="ENu-V1-OCC"/>
                             <constraint firstItem="sGV-qz-cNl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="POL-9D-OiF"/>
+                            <constraint firstItem="wkl-ck-pPf" firstAttribute="top" secondItem="sGV-qz-cNl" secondAttribute="bottom" constant="23" id="TkM-Nq-Gr9"/>
                             <constraint firstItem="TXn-9S-7e1" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Tn4-le-a6i"/>
                             <constraint firstItem="sGV-qz-cNl" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="ZR9-95-Yfr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wkl-ck-pPf" secondAttribute="trailing" constant="31" id="fnp-xc-ou0"/>
                             <constraint firstAttribute="trailing" secondItem="sGV-qz-cNl" secondAttribute="trailing" id="yos-hM-34y"/>
                         </constraints>
                     </view>
