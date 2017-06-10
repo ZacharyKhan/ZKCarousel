@@ -1,0 +1,22 @@
+{
+  "name": "ZKCarousel",
+  "version": "0.1.0",
+  "summary": "A short description of ZKCarousel.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ZacharyKhan/ZKCarousel",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ZacharyKhan": "zachary.khan3@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ZacharyKhan/ZKCarousel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ZKCarousel/Classes/**/*"
+}

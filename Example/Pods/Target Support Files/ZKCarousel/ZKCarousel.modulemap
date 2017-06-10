@@ -1,0 +1,6 @@
+framework module ZKCarousel {
+  umbrella header "ZKCarousel-umbrella.h"
+
+  export *
+  module * { export * }
+}
