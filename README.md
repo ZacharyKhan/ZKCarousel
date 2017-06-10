@@ -7,7 +7,7 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the Example directory first. Then, open the `.xcworkspace` and run the project within Xcode.
 
 ## Installation
 
@@ -19,6 +19,8 @@ it, simply add the following line to your Podfile:
 pod 'ZKCarousel'
 
 ```
+
+Then, `cd` into the directory containing your `podfile` and run `pod install`
 
 ## Author
 
