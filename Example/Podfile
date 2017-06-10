@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZKCarousel_Example' do
+  pod 'ZKCarousel', :path => '../'
+
+  target 'ZKCarousel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
