@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1724EF0544757465C4A13FFE067B0FD1 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F467535B72B7ADD994D40AEF09833EE /* ReplaceMe.swift */; };
 		25B07460785B392A1E3A0829FB3382C1 /* Pods-ZKCarousel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 178BD065C040CE7D64BD76C083818CE9 /* Pods-ZKCarousel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34E743DA49303055E2211D41EE6BEEE9 /* ZKCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A7B43AFDB99EB046297940C47CE80C /* ZKCarousel-dummy.m */; };
 		3DF85E145FD925E5E8F0DA96BC21FA06 /* Pods-ZKCarousel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6109E7733E700D23B39670B5AAFA6031 /* Pods-ZKCarousel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51E25CB16F69969459535D6515295DDB /* ZKCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A7B43AFDB99EB046297940C47CE80C /* ZKCarousel-dummy.m */; };
+		49CDB445A85B63C782A7A4F9F6AB1F63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		52795B867F4CA67A141A2DA732708FDD /* ZKCarousel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF784D4575186BD5889168AD8C015933 /* ZKCarousel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78E0245AB329D5976F07E990CBBD54FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8E93026FF5392D685F005B3271B193D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		9F5A198BA9C0E695862CC2A76B70429A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		78E0245AB329D5976F07E990CBBD54FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		7BACB0F596182D3AE3EC80FE4F38ADD2 /* ZKCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4B375A78D1DE03351FD3580035B98C /* ZKCarousel.swift */; };
+		8BBB2D292CB5E302723D0C42EA65B974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		9F5A198BA9C0E695862CC2A76B70429A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		B7C958C3BE12868D026DBBF65977BA2E /* Pods-ZKCarousel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F88294464199F4040E97DB0F230233 /* Pods-ZKCarousel_Example-dummy.m */; };
 		F0926040C400CB9D8A19214149ABB492 /* Pods-ZKCarousel_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB5731579C285FD4A9B30C57515E8C9 /* Pods-ZKCarousel_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -31,33 +32,34 @@
 
 /* Begin PBXFileReference section */
 		0BC436709B7930AFA048730911DCD042 /* Pods-ZKCarousel_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKCarousel_Example-resources.sh"; sourceTree = "<group>"; };
-		115A7527B8CAED9D7E9F245BC7054AF3 /* ZKCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZKCarousel.modulemap; sourceTree = "<group>"; };
+		115A7527B8CAED9D7E9F245BC7054AF3 /* ZKCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZKCarousel.modulemap; sourceTree = "<group>"; };
 		178BD065C040CE7D64BD76C083818CE9 /* Pods-ZKCarousel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZKCarousel_Tests-umbrella.h"; sourceTree = "<group>"; };
-		3B991318118140FB62F417DF0FEF768D /* ZKCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZKCarousel.framework; path = ZKCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F467535B72B7ADD994D40AEF09833EE /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		3B991318118140FB62F417DF0FEF768D /* ZKCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZKCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E69C33EFD53F70482A3A41ABAA6147 /* Pods-ZKCarousel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKCarousel_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4AF803D3F7A8337BC393B1ED43755655 /* ZKCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZKCarousel.xcconfig; sourceTree = "<group>"; };
 		4D7531D65601F18CBCB82A53045F8B48 /* Pods-ZKCarousel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZKCarousel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		51A7B43AFDB99EB046297940C47CE80C /* ZKCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZKCarousel-dummy.m"; sourceTree = "<group>"; };
 		5ABF2F5D6C3BA9B7A551AB748C6321F0 /* ZKCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZKCarousel-prefix.pch"; sourceTree = "<group>"; };
 		6109E7733E700D23B39670B5AAFA6031 /* Pods-ZKCarousel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZKCarousel_Example-umbrella.h"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7D78DD45D76351216374CBF476365B6F /* Pods-ZKCarousel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZKCarousel_Tests.modulemap"; sourceTree = "<group>"; };
+		7D78DD45D76351216374CBF476365B6F /* Pods-ZKCarousel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZKCarousel_Tests.modulemap"; sourceTree = "<group>"; };
 		857440F962D1090FA7022E83E4EDE642 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		880FC121D6EA68DC23AFB6ED90AF9F64 /* Pods_ZKCarousel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZKCarousel_Example.framework; path = "Pods-ZKCarousel_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		880FC121D6EA68DC23AFB6ED90AF9F64 /* Pods_ZKCarousel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKCarousel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		900D2F7F9D73C8366165F56141F2D50C /* Pods-ZKCarousel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZKCarousel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		971884CD9A1392F9F4D25152CA43CDA4 /* Pods-ZKCarousel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKCarousel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A31FD1FC2B5ED0ED14315CE104F9DF44 /* Pods-ZKCarousel_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKCarousel_Tests-resources.sh"; sourceTree = "<group>"; };
 		A478AD6CB358C1612544A58967862368 /* Pods-ZKCarousel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKCarousel_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A4F88294464199F4040E97DB0F230233 /* Pods-ZKCarousel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZKCarousel_Example-dummy.m"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B75E74FE1000430E61EA13EB4F85A13F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCD966E1055FAE59416588BD44B0553B /* Pods-ZKCarousel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZKCarousel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BEBB91B0CB8E3F31CFEC834E2FCA2875 /* Pods-ZKCarousel_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKCarousel_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DD4B375A78D1DE03351FD3580035B98C /* ZKCarousel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZKCarousel.swift; sourceTree = "<group>"; };
 		DDD7D5B0AE5CA64131ADCBFC370F8A6A /* Pods-ZKCarousel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKCarousel_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E079EEDBA98DDE37338FF9AFE2190B20 /* Pods-ZKCarousel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKCarousel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E4AF06DA1C8388EA325051742832FFF8 /* Pods_ZKCarousel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZKCarousel_Tests.framework; path = "Pods-ZKCarousel_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8AB81C4FDBE71A91A09723CEEC21C3B /* Pods-ZKCarousel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZKCarousel_Example.modulemap"; sourceTree = "<group>"; };
+		E4AF06DA1C8388EA325051742832FFF8 /* Pods_ZKCarousel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKCarousel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8AB81C4FDBE71A91A09723CEEC21C3B /* Pods-ZKCarousel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZKCarousel_Example.modulemap"; sourceTree = "<group>"; };
 		EAB5731579C285FD4A9B30C57515E8C9 /* Pods-ZKCarousel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZKCarousel_Tests-dummy.m"; sourceTree = "<group>"; };
 		EE1A5B69D8880DAE5A4AD1D2F3E37A2C /* Pods-ZKCarousel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZKCarousel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		EF784D4575186BD5889168AD8C015933 /* ZKCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZKCarousel-umbrella.h"; sourceTree = "<group>"; };
@@ -81,11 +83,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F67464C2BE0142DEBD3EAD87D2259CF2 /* Frameworks */ = {
+		B135A52F60C960C1A585249620E6E8E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E93026FF5392D685F005B3271B193D8 /* Foundation.framework in Frameworks */,
+				8BBB2D292CB5E302723D0C42EA65B974 /* Foundation.framework in Frameworks */,
+				49CDB445A85B63C782A7A4F9F6AB1F63 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +101,23 @@
 				C76C4CBD19A0D2C0D40FC76FCDA5B34A /* ZKCarousel */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		6294DF99A76A1C2777C92F83B7B48001 /* Pods-ZKCarousel_Tests */ = {
@@ -118,21 +138,12 @@
 			path = "Target Support Files/Pods-ZKCarousel_Tests";
 			sourceTree = "<group>";
 		};
-		6C5AE6E532539EFA8456631B7783A658 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3F467535B72B7ADD994D40AEF09833EE /* ReplaceMe.swift */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				2C4FB44157AACBC30047BFFEBA478D38 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				93907896B8D0AA3E1B9EBA6C8F8DE8FF /* Products */,
 				EA5C2F227A467414878A88AA4399207A /* Targets Support Files */,
 			);
@@ -151,9 +162,8 @@
 		9B5E0EB4248BE19F4CE8B6C26C030754 /* ZKCarousel */ = {
 			isa = PBXGroup;
 			children = (
-				6C5AE6E532539EFA8456631B7783A658 /* Classes */,
+				D029B2F66A24D5440D0E79C3ABEA3996 /* Classes */,
 			);
-			name = ZKCarousel;
 			path = ZKCarousel;
 			sourceTree = "<group>";
 		};
@@ -175,14 +185,6 @@
 			path = "Target Support Files/Pods-ZKCarousel_Example";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C76C4CBD19A0D2C0D40FC76FCDA5B34A /* ZKCarousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,12 +195,12 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		D029B2F66A24D5440D0E79C3ABEA3996 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				DD4B375A78D1DE03351FD3580035B98C /* ZKCarousel.swift */,
 			);
-			name = iOS;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		D61811314D7C94FDFDC2DC0CB0B46AE5 /* Support Files */ = {
@@ -258,8 +260,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AADB44510A07CB608A618BE8EA1302BB /* Build configuration list for PBXNativeTarget "ZKCarousel" */;
 			buildPhases = (
-				2AA6A347639CF6FE05EEB80D9AF0CB33 /* Sources */,
-				F67464C2BE0142DEBD3EAD87D2259CF2 /* Frameworks */,
+				F9BED336749BBD7FC02A4FD4AF871A7E /* Sources */,
+				B135A52F60C960C1A585249620E6E8E6 /* Frameworks */,
 				46EBA80355EAF8EC86C2DE806C9EC6F2 /* Headers */,
 			);
 			buildRules = (
@@ -314,6 +316,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					B5A09036564F2301C983BD9FE9C8A4A0 = {
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -343,20 +350,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2AA6A347639CF6FE05EEB80D9AF0CB33 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1724EF0544757465C4A13FFE067B0FD1 /* ReplaceMe.swift in Sources */,
-				51E25CB16F69969459535D6515295DDB /* ZKCarousel-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C3713A2C5AE96523920AE92612F16BA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F0926040C400CB9D8A19214149ABB492 /* Pods-ZKCarousel_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BED336749BBD7FC02A4FD4AF871A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E743DA49303055E2211D41EE6BEEE9 /* ZKCarousel-dummy.m in Sources */,
+				7BACB0F596182D3AE3EC80FE4F38ADD2 /* ZKCarousel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,11 +420,12 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -435,6 +443,7 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_ZKCarousel_Example;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -651,11 +660,12 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -673,6 +683,7 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_ZKCarousel_Example;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;

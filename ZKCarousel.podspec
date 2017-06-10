@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ZKCarousel'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ZKCarousel.'
+  s.summary          = 'ZKCarousel is a simple carousel based on UICollectionView.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+ZKCarousel is a simple carousel control built on top of a UICollectionView. It can be used for a number of implementations, most commonly used for some sort of authentication or landing screen.
                        DESC
 
   s.homepage         = 'https://github.com/ZacharyKhan/ZKCarousel'
@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ZacharyKhan' => 'zachary.khan3@gmail.com' }
   s.source           = { :git => 'https://github.com/ZacharyKhan/ZKCarousel.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/ZacharyKhan3'
 
   s.ios.deployment_target = '8.0'
 
@@ -37,6 +37,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
