@@ -99,7 +99,11 @@ fileprivate class carouselCollectionViewCell: UICollectionViewCell {
     
     fileprivate var slide : ZKCarouselSlide? {
         didSet {
-            self.parseData(forSlide: slide!)
+            guard let slide = slide else {
+                print("ZKCarousel could not parse the slide you provided. \n\(String(describing: self.slide))")
+                return
+            }
+            self.parseData(forSlide: slide)
         }
     }
     
@@ -173,6 +177,8 @@ fileprivate class carouselCollectionViewCell: UICollectionViewCell {
         if let description = slide.slideDescription {
             self.descriptionLabel.text = description
         }
+        
+        return
     }
 }
 
@@ -190,7 +196,6 @@ final public class ZKCarouselSlide : NSObject {
     
     override init() {
         super.init()
-        
     }
     
 }
