@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     // Instantiated and used with Storyboards
     @IBOutlet var carousel: ZKCarousel! = ZKCarousel()
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +36,13 @@ class ViewController: UIViewController {
         
         // Add the slides to the carousel
         self.carousel.slides = [slide, slide1, slide2]
+        
+        
+        // You can optionally use the 'interval' property to set the timing for automatic slide changes. The default is 1 second.
+        self.carousel.interval = 1.5
+        
+        // Optional - automatic switching between slides. 
+        self.carousel.start()
     }
 
 }
