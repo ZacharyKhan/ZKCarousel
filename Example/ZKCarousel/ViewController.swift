@@ -10,7 +10,7 @@ import UIKit
 import ZKCarousel
 
 class ViewController: UIViewController {
-    
+
     // Instantiated and used with Storyboards
     @IBOutlet var carousel: ZKCarousel! = ZKCarousel()
 
