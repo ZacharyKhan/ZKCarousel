@@ -78,8 +78,7 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
         let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
         let visibleIndexPath: IndexPath = collectionView.indexPathForItem(at: visiblePoint) ?? IndexPath(item: 0, section: 0)
         let index = visibleIndexPath.item
-        print(index)
-        
+
         if index == (slides.count-1) {
             let indexPathToShow = IndexPath(item: 0, section: 0)
             self.collectionView.selectItem(at: indexPathToShow, animated: true, scrollPosition: .centeredHorizontally)
