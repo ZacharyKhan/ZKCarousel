@@ -10,16 +10,17 @@ import UIKit
 
 final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    private lazy var tapGesture : UITapGestureRecognizer = {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(tapGestureHandler(tap:)))
-        return tap
-    }()
     
     public var slides : [ZKCarouselSlide] = [] {
         didSet {
             self.collectionView.reloadData()
         }
     }
+    
+    private lazy var tapGesture : UITapGestureRecognizer = {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapGestureHandler(tap:)))
+        return tap
+    }()
     
     public lazy var pageControl : UIPageControl = {
         let control = UIPageControl()
@@ -75,10 +76,9 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
         visibleRect.origin = collectionView.contentOffset
         visibleRect.size = collectionView.bounds.size
         let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
-        let visibleIndexPath: IndexPath = collectionView.indexPathForItem(at: visiblePoint)!
+        let visibleIndexPath: IndexPath = collectionView.indexPathForItem(at: visiblePoint) ?? IndexPath(item: 0, section: 0)
         let index = visibleIndexPath.item
-        print(index)
-        
+
         if index == (slides.count-1) {
             let indexPathToShow = IndexPath(item: 0, section: 0)
             self.collectionView.selectItem(at: indexPathToShow, animated: true, scrollPosition: .centeredHorizontally)
@@ -86,6 +86,18 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
             let indexPathToShow = IndexPath(item: (index + 1), section: 0)
             self.collectionView.selectItem(at: indexPathToShow, animated: true, scrollPosition: .centeredHorizontally)
         }
+    }
+    
+    private var timer : Timer = Timer()
+    public var interval : Double?
+    
+    public func start() {
+        timer = Timer.scheduledTimer(timeInterval: interval ?? 1.0, target: self, selector: #selector(tapGestureHandler(tap:)), userInfo: nil, repeats: true)
+        timer.fire()
+    }
+    
+    public func stop() {
+        timer.invalidate()
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
