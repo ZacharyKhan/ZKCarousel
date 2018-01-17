@@ -10,6 +10,11 @@ import UIKit
 
 final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    private lazy var tapGesture : UITapGestureRecognizer = {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapGestureHandler(tap:)))
+        return tap
+    }()
+    
     public var slides : [ZKCarouselSlide] = [] {
         didSet {
             self.collectionView.reloadData()
@@ -53,15 +58,34 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
     
     private func setupCarousel() {
         self.backgroundColor = .clear
-
+        
         self.addSubview(collectionView)
         self.addConstraintsWithFormat("H:|[v0]|", views: collectionView)
         self.addConstraintsWithFormat("V:|[v0]|", views: collectionView)
+        self.collectionView.addGestureRecognizer(self.tapGesture)
         
         self.addSubview(pageControl)
         self.addConstraintsWithFormat("H:|-20-[v0]-20-|", views: pageControl)
         self.addConstraintsWithFormat("V:[v0(25)]-5-|", views: pageControl)
         self.bringSubview(toFront: pageControl)
+    }
+    
+    @objc private func tapGestureHandler(tap: UITapGestureRecognizer?) {
+        var visibleRect = CGRect()
+        visibleRect.origin = collectionView.contentOffset
+        visibleRect.size = collectionView.bounds.size
+        let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
+        let visibleIndexPath: IndexPath = collectionView.indexPathForItem(at: visiblePoint)!
+        let index = visibleIndexPath.item
+        print(index)
+        
+        if index == (slides.count-1) {
+            let indexPathToShow = IndexPath(item: 0, section: 0)
+            self.collectionView.selectItem(at: indexPathToShow, animated: true, scrollPosition: .centeredHorizontally)
+        } else {
+            let indexPathToShow = IndexPath(item: (index + 1), section: 0)
+            self.collectionView.selectItem(at: indexPathToShow, animated: true, scrollPosition: .centeredHorizontally)
+        }
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -180,6 +204,7 @@ fileprivate class carouselCollectionViewCell: UICollectionViewCell {
         
         return
     }
+
 }
 
 final public class ZKCarouselSlide : NSObject {
