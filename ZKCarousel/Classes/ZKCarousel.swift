@@ -100,6 +100,14 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
         timer.invalidate()
     }
     
+    public func selectedIndexPath() -> IndexPath? {
+        var visibleRect = CGRect()
+        visibleRect.origin = collectionView.contentOffset
+        visibleRect.size = collectionView.bounds.size
+        let visiblePoint = CGPoint(x: visibleRect.midX, y: visibleRect.midY)
+        return collectionView.indexPathForItem(at: visiblePoint)
+    }
+    
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "slideCell", for: indexPath) as! carouselCollectionViewCell
         cell.slide = self.slides[indexPath.item]
