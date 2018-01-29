@@ -29,6 +29,7 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
         control.hidesForSinglePage = true
         control.pageIndicatorTintColor = .lightGray
         control.currentPageIndicatorTintColor = UIColor(red:0.20, green:0.60, blue:0.86, alpha:1.0)
+        control.translatesAutoresizingMaskIntoConstraints = false
         return control
     }()
     
@@ -44,6 +45,7 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
         cv.backgroundColor = .clear
         cv.showsHorizontalScrollIndicator = false
         cv.bounces = false
+        cv.translatesAutoresizingMaskIntoConstraints = false
         return cv
     }()
     
@@ -61,13 +63,18 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
         self.backgroundColor = .clear
         
         self.addSubview(collectionView)
-        self.addConstraintsWithFormat("H:|[v0]|", views: collectionView)
-        self.addConstraintsWithFormat("V:|[v0]|", views: collectionView)
+        NSLayoutConstraint(item: collectionView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
+        NSLayoutConstraint(item: collectionView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
+        NSLayoutConstraint(item: collectionView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 0).isActive = true
+        NSLayoutConstraint(item: collectionView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: 0).isActive = true
+        
         self.collectionView.addGestureRecognizer(self.tapGesture)
         
         self.addSubview(pageControl)
-        self.addConstraintsWithFormat("H:|-20-[v0]-20-|", views: pageControl)
-        self.addConstraintsWithFormat("V:[v0(25)]-5-|", views: pageControl)
+        NSLayoutConstraint(item: pageControl, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 20).isActive = true
+        NSLayoutConstraint(item: pageControl, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: -20).isActive = true
+        NSLayoutConstraint(item: pageControl, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: -5).isActive = true
+        NSLayoutConstraint(item: pageControl, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 25).isActive = true
         self.bringSubview(toFront: pageControl)
     }
     
@@ -157,6 +164,7 @@ fileprivate class carouselCollectionViewCell: UICollectionViewCell {
         iv.backgroundColor = .clear
         iv.clipsToBounds = true
         iv.addBlackGradientLayer(frame: self.bounds)
+        iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
     }()
     
@@ -166,6 +174,7 @@ fileprivate class carouselCollectionViewCell: UICollectionViewCell {
         label.font = UIFont.boldSystemFont(ofSize: 40)
         label.textColor = .white
         label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -194,8 +203,10 @@ fileprivate class carouselCollectionViewCell: UICollectionViewCell {
         self.clipsToBounds = true
         
         self.addSubview(self.imageView)
-        self.addConstraintsWithFormat("H:|[v0]|", views: self.imageView)
-        self.addConstraintsWithFormat("V:|[v0]|", views: self.imageView)
+        NSLayoutConstraint(item: self.imageView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
+        NSLayoutConstraint(item: self.imageView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
+        NSLayoutConstraint(item: self.imageView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 0).isActive = true
+        NSLayoutConstraint(item: self.imageView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: 0).isActive = true
         
         self.addSubview(self.descriptionLabel)
         let left = NSLayoutConstraint(item: descriptionLabel, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 15)
@@ -205,6 +216,11 @@ fileprivate class carouselCollectionViewCell: UICollectionViewCell {
         NSLayoutConstraint.activate([left, right, bottom, top])
         
         self.addSubview(self.titleLabel)
+        NSLayoutConstraint(item: self.titleLabel, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 15).isActive = true
+        NSLayoutConstraint(item: self.titleLabel, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: -15).isActive = true
+        NSLayoutConstraint(item: self.titleLabel, attribute: .bottom, relatedBy: .equal, toItem: self.descriptionLabel, attribute: .top, multiplier: 1.0, constant: 8).isActive = true
+        NSLayoutConstraint(item: self.titleLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 43).isActive = true
+        
         self.addConstraintsWithFormat("H:|-15-[v0]-15-|", views: self.titleLabel)
         self.addConstraintsWithFormat("V:[v0(43)]-[v1]", views: self.titleLabel, self.descriptionLabel)
     }
