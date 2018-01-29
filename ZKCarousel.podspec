@@ -39,4 +39,5 @@ ZKCarousel is a simple carousel control built on top of a UICollectionView. It c
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
 end
