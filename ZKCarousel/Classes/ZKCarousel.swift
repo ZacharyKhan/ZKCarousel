@@ -75,7 +75,7 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
         NSLayoutConstraint(item: pageControl, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: -20).isActive = true
         NSLayoutConstraint(item: pageControl, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: -5).isActive = true
         NSLayoutConstraint(item: pageControl, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 25).isActive = true
-        self.bringSubview(toFront: pageControl)
+        self.bringSubviewToFront(pageControl)
     }
     
     @objc private func tapGestureHandler(tap: UITapGestureRecognizer?) {
@@ -272,7 +272,7 @@ extension UIView {
             view.translatesAutoresizingMaskIntoConstraints = false
         }
         
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutFormatOptions(), metrics: nil, views: viewsDictionary))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: viewsDictionary))
     }
     
     
