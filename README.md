@@ -1,5 +1,5 @@
 # ZKCarousel
-
+[![Swift 4.0](https://img.shields.io/badge/swift-3.0-orange.svg)](https://swift.org)
 [![CI Status](http://img.shields.io/travis/ZacharyKhan/ZKCarousel.svg?style=flat)](https://travis-ci.org/ZacharyKhan/ZKCarousel)
 [![Version](https://img.shields.io/cocoapods/v/ZKCarousel.svg?style=flat)](http://cocoapods.org/pods/ZKCarousel)
 [![License](https://img.shields.io/cocoapods/l/ZKCarousel.svg?style=flat)](http://cocoapods.org/pods/ZKCarousel)
