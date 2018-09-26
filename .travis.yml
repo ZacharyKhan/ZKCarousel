@@ -1,10 +1,11 @@
 language: objective-c
 osx_image: xcode10
-xcode_workspace: ZKCarousel.xcworkspace
+xcode_workspace: Example/ZKCarousel.xcworkspace
 before_install:
   - brew update
   - brew outdated xctool || brew upgrade xctool
   - npm install ios-sim -g
   - ios-sim start --devicetypeid "com.apple.CoreSimulator.SimDeviceType.iPhone-8, 12.0"
 script:
-  - xcodebuild clean && xcodebuild build -sdk iphonesimulator12.0 -workspace ZKCarousel.xcworkspace -scheme Beavus CODE_SIGNING_REQUIRED=NO
+  - xcodebuild clean && xcodebuild build -sdk iphonesimulator12.0 -workspace Example/ZKCarousel.xcworkspace -scheme Beavus CODE_SIGNING_REQUIRED=NO
+  - pod lib lint
