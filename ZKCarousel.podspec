@@ -22,13 +22,12 @@ ZKCarousel is a simple carousel control built on top of a UICollectionView. It c
                        DESC
 
   s.homepage         = 'https://github.com/ZacharyKhan/ZKCarousel'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ZacharyKhan' => 'zachary.khan3@gmail.com' }
   s.source           = { :git => 'https://github.com/ZacharyKhan/ZKCarousel.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/ZacharyKhan3'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'ZKCarousel/Classes/**/*'
   
