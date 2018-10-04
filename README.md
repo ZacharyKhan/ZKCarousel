@@ -81,3 +81,5 @@ For all bug reports, feature requests, etc. please submit an issue to the reposi
 ## License
 
 ZKCarousel is available under the MIT license. See the LICENSE file for more info.
+
+
