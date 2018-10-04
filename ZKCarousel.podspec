@@ -27,7 +27,7 @@ ZKCarousel is a simple carousel control built on top of a UICollectionView. It c
   s.source           = { :git => 'https://github.com/ZacharyKhan/ZKCarousel.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/ZacharyKhan3'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'ZKCarousel/Classes/**/*'
   
