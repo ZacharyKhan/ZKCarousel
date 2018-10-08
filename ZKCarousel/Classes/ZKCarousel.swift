@@ -220,9 +220,6 @@ fileprivate class carouselCollectionViewCell: UICollectionViewCell {
         NSLayoutConstraint(item: self.titleLabel, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: -15).isActive = true
         NSLayoutConstraint(item: self.titleLabel, attribute: .bottom, relatedBy: .equal, toItem: self.descriptionLabel, attribute: .top, multiplier: 1.0, constant: 8).isActive = true
         NSLayoutConstraint(item: self.titleLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 43).isActive = true
-        
-        self.addConstraintsWithFormat("H:|-15-[v0]-15-|", views: self.titleLabel)
-        self.addConstraintsWithFormat("V:[v0(43)]-[v1]", views: self.titleLabel, self.descriptionLabel)
     }
     
     private func parseData(forSlide slide: ZKCarouselSlide) {
