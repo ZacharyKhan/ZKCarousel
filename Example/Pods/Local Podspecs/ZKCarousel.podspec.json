@@ -1,6 +1,6 @@
 {
   "name": "ZKCarousel",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "summary": "ZKCarousel is a simple carousel based on UICollectionView.",
   "description": "ZKCarousel is a simple carousel control built on top of a UICollectionView. It can be used for a number of implementations, most commonly used for some sort of authentication or landing screen.",
   "homepage": "https://github.com/ZacharyKhan/ZKCarousel",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/ZacharyKhan/ZKCarousel.git",
-    "tag": "0.1.9"
+    "tag": "0.2.0"
   },
   "social_media_url": "https://twitter.com/ZacharyKhan3",
   "platforms": {
