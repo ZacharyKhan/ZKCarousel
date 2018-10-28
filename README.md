@@ -67,7 +67,7 @@ class ViewController : UIViewController {
 ```
 
 #### Auto-Traverse Slides
-There is an option to let ZKCarousel switch between slides automatically. All you have to do is use the `start()` and `stop()` functions on ZKCarousel. You can also set the time interval between slides by setting the `interval` property. The default interval is 1 second.
+There is an option to let ZKCarousel switch between slides automatically. All you have to do is use the `start()` and `stop()` functions on ZKCarousel. You can also set the time interval between slides by setting the `interval` property. The default interval is 2 seconds.
 
 See example for a working implementation of this.
 
