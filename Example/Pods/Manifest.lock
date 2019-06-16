@@ -1,5 +1,5 @@
 PODS:
-  - ZKCarousel (0.2.0)
+  - ZKCarousel (0.2.1)
 
 DEPENDENCIES:
   - ZKCarousel (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZKCarousel: 26345acde27e036d0e7be2f3126c302cfa6bf6c8
+  ZKCarousel: 2cb2a9bbfebfa50ff7e240ae061890cdc3ee3cd8
 
 PODFILE CHECKSUM: ac6304db421a3940838a5756b877b1da72952809
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.2
