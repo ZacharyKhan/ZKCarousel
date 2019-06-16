@@ -270,7 +270,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZKCarousel_Example/Pods-ZKCarousel_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ZKCarousel_Example/Pods-ZKCarousel_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ZKCarousel/ZKCarousel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -279,7 +279,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZKCarousel_Example/Pods-ZKCarousel_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZKCarousel_Example/Pods-ZKCarousel_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7A3C725EC13CA8860C3E0BC7 /* [CP] Check Pods Manifest.lock */ = {
