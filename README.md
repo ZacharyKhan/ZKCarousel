@@ -1,6 +1,5 @@
 # ZKCarousel
-[![Build Status](https://travis-ci.org/ZacharyKhan/ZKCarousel.svg?branch=master)](https://travis-ci.org/ZacharyKhan/ZKCarousel)
-[![Swift 4.2](https://img.shields.io/badge/swift-4.2-orange.svg)](https://swift.org)
+[![Swift 5.0](https://img.shields.io/badge/swift-4.2-orange.svg)](https://swift.org)
 [![Version](https://img.shields.io/cocoapods/v/ZKCarousel.svg?style=flat)](http://cocoapods.org/pods/ZKCarousel)
 [![License](https://img.shields.io/cocoapods/l/ZKCarousel.svg?style=flat)](http://cocoapods.org/pods/ZKCarousel)
 [![Platform](https://img.shields.io/cocoapods/p/ZKCarousel.svg?style=flat)](http://cocoapods.org/pods/ZKCarousel)
