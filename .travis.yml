@@ -1,5 +1,5 @@
 language: swift
 osx_image: xcode11
-xcode_workspace: Beavus.xcworkspace
+xcode_workspace: ZKCarousel.xcworkspace
 script:
-  - xcodebuild clean && xcodebuild build -sdk iphonesimulator13.0 -workspace Beavus.xcworkspace -scheme Beavus CODE_SIGNING_REQUIRED=NO
+  - xcodebuild clean && xcodebuild build -sdk iphonesimulator13.0 -workspace ZKCarousel.xcworkspace -scheme ZKCarousel CODE_SIGNING_REQUIRED=NO
