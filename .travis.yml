@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode11
+xcode_workspace: Example/ZKCarousel.xcworkspace
+script:
+  - xcodebuild clean && xcodebuild build -sdk iphonesimulator13.0 -workspace Example/ZKCarousel.xcworkspace -scheme ZKCarousel-Example CODE_SIGNING_REQUIRED=NO
