@@ -1,8 +1,5 @@
 language: swift
 osx_image: xcode11
 xcode_workspace: Beavus.xcworkspace
-before_install:
-  - pod update
-  - pod install
 script:
   - xcodebuild clean && xcodebuild build -sdk iphonesimulator13.0 -workspace Beavus.xcworkspace -scheme Beavus CODE_SIGNING_REQUIRED=NO
