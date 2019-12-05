@@ -43,7 +43,7 @@
 		1F0D685A53697CAD70BC76076360276C /* Pods-ZKCarousel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKCarousel_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		280AD4CB48A2FCC16D35C2834FE48A17 /* Pods-ZKCarousel_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZKCarousel_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		286ADD893FA41883500D5E5E3AFDF34F /* Pods-ZKCarousel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKCarousel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2E7F26765956888328DE9A463DD5514A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2E7F26765956888328DE9A463DD5514A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		326FE33D02A028864FE1A42FB15EDA34 /* Pods-ZKCarousel_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKCarousel_Example-frameworks.sh"; sourceTree = "<group>"; };
 		34A64891FB12A562B5FDDDD32C868F3F /* ZKCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZKCarousel.xcconfig; sourceTree = "<group>"; };
@@ -56,20 +56,20 @@
 		71413F4B80A2D376A396F15AD53A798A /* ZKCarousel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZKCarousel.swift; path = ZKCarousel/Classes/ZKCarousel.swift; sourceTree = "<group>"; };
 		7EC47A38219C6F55B713D47B75DEEB8D /* Pods-ZKCarousel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKCarousel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7EFEBC3A5FF4B600F3379B3870668EF1 /* Pods-ZKCarousel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZKCarousel_Example.modulemap"; sourceTree = "<group>"; };
-		7FA60AFB1515471DFC1BDDBA0F5D527B /* ZKCarousel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZKCarousel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7FA60AFB1515471DFC1BDDBA0F5D527B /* ZKCarousel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ZKCarousel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8A40040E74AC1D024D11FD17CE6CBF31 /* Pods-ZKCarousel_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZKCarousel_Tests-umbrella.h"; sourceTree = "<group>"; };
-		8C5A3ED71BCBDDA5EE3222C970FA145A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8C5A3ED71BCBDDA5EE3222C970FA145A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8EDCE7E64C73DCE918A908070EF64993 /* Pods-ZKCarousel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZKCarousel_Tests-dummy.m"; sourceTree = "<group>"; };
 		977B777A829AC186786B3BC6A0D8EB17 /* Pods-ZKCarousel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZKCarousel_Tests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BA1957B52A30DF0243737196B1230707 /* ZKCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZKCarousel.framework; path = ZKCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA1957B52A30DF0243737196B1230707 /* ZKCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZKCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FF9D8D5039E49F20FCDF96242EC913 /* Pods-ZKCarousel_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZKCarousel_Tests-Info.plist"; sourceTree = "<group>"; };
 		C8B6D65E6C4D3D13C30CF05265848328 /* Pods-ZKCarousel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZKCarousel_Example-umbrella.h"; sourceTree = "<group>"; };
 		D1F2CBC8C2C166EFEAE36AD0E8BD6BA6 /* Pods-ZKCarousel_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZKCarousel_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D4B173BE4A3898676A2929C704B56F49 /* Pods_ZKCarousel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZKCarousel_Tests.framework; path = "Pods-ZKCarousel_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4B173BE4A3898676A2929C704B56F49 /* Pods_ZKCarousel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKCarousel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F734733AE8B3801627834C84907161 /* ZKCarousel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZKCarousel-Info.plist"; sourceTree = "<group>"; };
 		E233983988FFC67BC3DC59CF29024FBA /* Pods-ZKCarousel_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZKCarousel_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EC24BAFEB07E07DAA17287F9181851BE /* Pods_ZKCarousel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZKCarousel_Example.framework; path = "Pods-ZKCarousel_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC24BAFEB07E07DAA17287F9181851BE /* Pods_ZKCarousel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKCarousel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF12C4B227B9D55B0F224145989D4B65 /* Pods-ZKCarousel_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZKCarousel_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -326,6 +326,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = ABC1916BC746AA27E2A23AE9121057D6 /* Products */;
@@ -561,8 +562,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

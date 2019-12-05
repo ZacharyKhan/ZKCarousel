@@ -111,6 +111,10 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
         timer.invalidate()
     }
     
+    public func removeDefaultGestureRecognizer() {
+        
+    }
+    
     public func selectedIndexPath() -> IndexPath? {
         var visibleRect = CGRect()
         visibleRect.origin = collectionView.contentOffset
