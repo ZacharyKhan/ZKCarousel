@@ -36,7 +36,7 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
         return control
     }()
     
-    fileprivate lazy var collectionView : UICollectionView = {
+    public lazy var collectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -109,6 +109,11 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
     
     public func stop() {
         timer.invalidate()
+    }
+    
+    public func disableTap() {
+        // This function is provided in case you want to remove the default gesture and provide your own. The default gesture changes the slides on tap.
+        collectionView.removeGestureRecognizer(tapGesture)
     }
     
     public func selectedIndexPath() -> IndexPath? {

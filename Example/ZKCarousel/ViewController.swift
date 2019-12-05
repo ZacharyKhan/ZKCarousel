@@ -44,8 +44,11 @@ class ViewController: UIViewController {
         // You can optionally use the 'interval' property to set the timing for automatic slide changes. The default is 1 second.
         self.carousel.interval = 1.5
         
-        // Optional - automatic switching between slides. 
+        // OPTIONAL - use this function to automatically start traversing slides.
         self.carousel.start()
+        
+        // OPTIONAL - use this function to stop automatically traversing slides.
+        // self.carousel.stop()
     }
 
 }
