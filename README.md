@@ -71,6 +71,9 @@ There is an option to let ZKCarousel switch between slides automatically. All yo
 
 See example for a working implementation of this.
 
+#### Custom Gesture Recognizers
+
+If you would like to add a custom action upon tapping the carousel (as opposed to the default action, which changes to the next slide) you will need to first call `disableTap()` to remove the default gesture recognizer, then add your own gesture recognizer to the UICollectionView.
 
 ## Contributions
 
