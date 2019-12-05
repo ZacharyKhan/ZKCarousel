@@ -111,7 +111,7 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
         timer.invalidate()
     }
     
-    public func removeDefaultGestureRecognizer() {
+    public func disableTap() {
         // This function is provided in case you want to remove the default gesture and provide your own. The default gesture changes the slides on tap.
         collectionView.removeGestureRecognizer(tapGesture)
     }
