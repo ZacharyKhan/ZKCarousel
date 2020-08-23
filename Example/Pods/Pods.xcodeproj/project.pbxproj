@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		342C4CEB65FCF86F3D1527A6B92F849B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		5522E143CFCACC7067D8471A47939318 /* Pods-ZKCarousel_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A40040E74AC1D024D11FD17CE6CBF31 /* Pods-ZKCarousel_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6043E704814052E3BC04AD22ED9772F9 /* ZKCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71413F4B80A2D376A396F15AD53A798A /* ZKCarousel.swift */; };
 		700761A7842D9B8A7C8399D76D3271DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
 		73DC5DAC1E9C60191658EC976B02FECD /* Pods-ZKCarousel_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CE3910723927002424D56A5F4AF55F /* Pods-ZKCarousel_Example-dummy.m */; };
 		81EEF5A248EEBDC56506AEA2FF93E97A /* Pods-ZKCarousel_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8B6D65E6C4D3D13C30CF05265848328 /* Pods-ZKCarousel_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6E8D84724F201CF001D0CDB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8D84324F201CF001D0CDB /* Extensions.swift */; };
+		B6E8D84824F201CF001D0CDB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8D84324F201CF001D0CDB /* Extensions.swift */; };
+		B6E8D84924F201CF001D0CDB /* ZKCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8D84424F201CF001D0CDB /* ZKCarousel.swift */; };
+		B6E8D84A24F201CF001D0CDB /* ZKCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8D84424F201CF001D0CDB /* ZKCarousel.swift */; };
+		B6E8D84B24F201CF001D0CDB /* ZKCarouselSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8D84524F201CF001D0CDB /* ZKCarouselSlide.swift */; };
+		B6E8D84C24F201CF001D0CDB /* ZKCarouselSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8D84524F201CF001D0CDB /* ZKCarouselSlide.swift */; };
+		B6E8D84D24F201CF001D0CDB /* ZKCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8D84624F201CF001D0CDB /* ZKCarouselCell.swift */; };
+		B6E8D84E24F201CF001D0CDB /* ZKCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8D84624F201CF001D0CDB /* ZKCarouselCell.swift */; };
 		C2E6C087341EB6375CD0B82AA0AA5B94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 		E404CE61D40CC4BA043869046C6939F7 /* ZKCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C5ED5118FDF49B82E880DF40A0A59B /* ZKCarousel-dummy.m */; };
 		EC60A1E692D0888BDADFE468405C19F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
@@ -53,7 +60,6 @@
 		53CE3910723927002424D56A5F4AF55F /* Pods-ZKCarousel_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZKCarousel_Example-dummy.m"; sourceTree = "<group>"; };
 		62C5ED5118FDF49B82E880DF40A0A59B /* ZKCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZKCarousel-dummy.m"; sourceTree = "<group>"; };
 		6EA7BDEF77DE39D3D335479B6BA2D69B /* Pods-ZKCarousel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKCarousel_Example.release.xcconfig"; sourceTree = "<group>"; };
-		71413F4B80A2D376A396F15AD53A798A /* ZKCarousel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZKCarousel.swift; path = ZKCarousel/Classes/ZKCarousel.swift; sourceTree = "<group>"; };
 		7EC47A38219C6F55B713D47B75DEEB8D /* Pods-ZKCarousel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKCarousel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7EFEBC3A5FF4B600F3379B3870668EF1 /* Pods-ZKCarousel_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZKCarousel_Example.modulemap"; sourceTree = "<group>"; };
 		7FA60AFB1515471DFC1BDDBA0F5D527B /* ZKCarousel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ZKCarousel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -62,6 +68,10 @@
 		8EDCE7E64C73DCE918A908070EF64993 /* Pods-ZKCarousel_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZKCarousel_Tests-dummy.m"; sourceTree = "<group>"; };
 		977B777A829AC186786B3BC6A0D8EB17 /* Pods-ZKCarousel_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZKCarousel_Tests.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B6E8D84324F201CF001D0CDB /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ZKCarousel/Classes/Extensions.swift; sourceTree = "<group>"; };
+		B6E8D84424F201CF001D0CDB /* ZKCarousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZKCarousel.swift; path = ZKCarousel/Classes/ZKCarousel.swift; sourceTree = "<group>"; };
+		B6E8D84524F201CF001D0CDB /* ZKCarouselSlide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZKCarouselSlide.swift; path = ZKCarousel/Classes/ZKCarouselSlide.swift; sourceTree = "<group>"; };
+		B6E8D84624F201CF001D0CDB /* ZKCarouselCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZKCarouselCell.swift; path = ZKCarousel/Classes/ZKCarouselCell.swift; sourceTree = "<group>"; };
 		BA1957B52A30DF0243737196B1230707 /* ZKCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZKCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FF9D8D5039E49F20FCDF96242EC913 /* Pods-ZKCarousel_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZKCarousel_Tests-Info.plist"; sourceTree = "<group>"; };
 		C8B6D65E6C4D3D13C30CF05265848328 /* Pods-ZKCarousel_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZKCarousel_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -130,7 +140,10 @@
 		225A2C59774CAE3D05D9C0EB48E9197D /* ZKCarousel */ = {
 			isa = PBXGroup;
 			children = (
-				71413F4B80A2D376A396F15AD53A798A /* ZKCarousel.swift */,
+				B6E8D84324F201CF001D0CDB /* Extensions.swift */,
+				B6E8D84424F201CF001D0CDB /* ZKCarousel.swift */,
+				B6E8D84624F201CF001D0CDB /* ZKCarouselCell.swift */,
+				B6E8D84524F201CF001D0CDB /* ZKCarouselSlide.swift */,
 				6C19F51A2F2620556D69DCCD84774E3E /* Pod */,
 				D57814B93B0EC94DA4E9FD8561E96976 /* Support Files */,
 			);
@@ -319,6 +332,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					1AD089EF1AA59336DB8E81760279D1F5 = {
+						LastSwiftMigration = 1200;
+					};
+					7825D8A59D0F69C856B604081F9C0018 = {
+						LastSwiftMigration = 1200;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -369,8 +390,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E8D84E24F201CF001D0CDB /* ZKCarouselCell.swift in Sources */,
+				B6E8D84C24F201CF001D0CDB /* ZKCarouselSlide.swift in Sources */,
 				E404CE61D40CC4BA043869046C6939F7 /* ZKCarousel-dummy.m in Sources */,
-				6043E704814052E3BC04AD22ED9772F9 /* ZKCarousel.swift in Sources */,
+				B6E8D84824F201CF001D0CDB /* Extensions.swift in Sources */,
+				B6E8D84A24F201CF001D0CDB /* ZKCarousel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +410,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6E8D84D24F201CF001D0CDB /* ZKCarouselCell.swift in Sources */,
+				B6E8D84B24F201CF001D0CDB /* ZKCarouselSlide.swift in Sources */,
 				73DC5DAC1E9C60191658EC976B02FECD /* Pods-ZKCarousel_Example-dummy.m in Sources */,
+				B6E8D84724F201CF001D0CDB /* Extensions.swift in Sources */,
+				B6E8D84924F201CF001D0CDB /* ZKCarousel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +508,7 @@
 			baseConfigurationReference = 6EA7BDEF77DE39D3D335479B6BA2D69B /* Pods-ZKCarousel_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -503,6 +532,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -638,6 +668,7 @@
 			baseConfigurationReference = 1F0D685A53697CAD70BC76076360276C /* Pods-ZKCarousel_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -661,6 +692,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -671,6 +704,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34A64891FB12A562B5FDDDD32C868F3F /* ZKCarousel.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -685,6 +719,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.1.0;
 				MODULEMAP_FILE = "Target Support Files/ZKCarousel/ZKCarousel.modulemap";
 				PRODUCT_MODULE_NAME = ZKCarousel;
 				PRODUCT_NAME = ZKCarousel;
@@ -703,6 +738,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34A64891FB12A562B5FDDDD32C868F3F /* ZKCarousel.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -717,12 +753,14 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.1.0;
 				MODULEMAP_FILE = "Target Support Files/ZKCarousel/ZKCarousel.modulemap";
 				PRODUCT_MODULE_NAME = ZKCarousel;
 				PRODUCT_NAME = ZKCarousel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

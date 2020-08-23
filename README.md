@@ -58,7 +58,7 @@ class ViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        self.carousel.frame = CGRect()
+        carousel.frame = CGRect()
         self.view.addSubView(self.carousel)
     }
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZKCarousel'
-  s.version          = '1.0.3'
+  s.version          = '1.1.0'
   s.summary          = 'ZKCarousel is a simple carousel based on UICollectionView.'
 
 # This description is used to generate tags and improve search results.
@@ -25,18 +25,9 @@ ZKCarousel is a simple carousel control built on top of a UICollectionView. It c
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ZacharyKhan' => 'zachary.khan3@gmail.com' }
   s.source           = { :git => 'https://github.com/ZacharyKhan/ZKCarousel.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/ZacharyKhan3'
-
-  s.ios.deployment_target = '12.0'
-
-  s.source_files = 'ZKCarousel/Classes/**/*'
+  s.source_files     = 'ZKCarousel/Classes/**/*.{h,m,swift}'
   
-  # s.resource_bundles = {
-  #   'ZKCarousel' => ['ZKCarousel/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.ios.deployment_target = '12.0'
   s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 
 end
