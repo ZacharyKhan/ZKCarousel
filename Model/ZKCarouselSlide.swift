@@ -5,20 +5,14 @@
 //  Created by Zachary Khan on 8/22/20.
 //
 
-final public class ZKCarouselSlide : NSObject {
+public struct ZKCarouselSlide {
+    public var image : UIImage?
+    public var title : String?
+    public var description: String?
     
-    public var slideImage : UIImage?
-    public var slideTitle : String?
-    public var slideDescription: String?
-    
-    public init(image: UIImage, title: String, description: String) {
-        slideImage = image
-        slideTitle = title
-        slideDescription = description
+    public init(image: UIImage?, title: String?, description: String?) {
+        self.image = image
+        self.title = title
+        self.description = description
     }
-    
-    override init() {
-        super.init()
-    }
-    
 }

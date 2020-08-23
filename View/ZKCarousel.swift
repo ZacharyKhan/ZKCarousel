@@ -78,23 +78,21 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
     
     // MARK: - Internal Methods
     private func setupCarousel() {
-        self.backgroundColor = .clear
+        backgroundColor = .clear
         
-        self.addSubview(collectionView)
-        NSLayoutConstraint(item: collectionView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: collectionView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: collectionView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: collectionView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: 0).isActive = true
+        addSubview(collectionView)
+        collectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        collectionView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        collectionView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        collectionView.addGestureRecognizer(tapGesture)
         
-        self.collectionView.addGestureRecognizer(self.tapGesture)
-        
-        self.addSubview(pageControl)
-        NSLayoutConstraint(item: pageControl, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 20).isActive = true
-        NSLayoutConstraint(item: pageControl, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: -20).isActive = true
-        NSLayoutConstraint(item: pageControl, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: -5).isActive = true
-        NSLayoutConstraint(item: pageControl, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 25).isActive = true
-        
-        self.bringSubviewToFront(pageControl)
+        addSubview(pageControl)
+        pageControl.leftAnchor.constraint(equalTo: leftAnchor, constant: 16).isActive = true
+        pageControl.rightAnchor.constraint(equalTo: rightAnchor, constant: -16).isActive = true
+        pageControl.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8).isActive = true
+        pageControl.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        bringSubviewToFront(pageControl)
     }
     
     @objc private func tapGestureHandler(tap: UITapGestureRecognizer?) {
@@ -107,10 +105,10 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
 
         if index == (slides.count-1) {
             let indexPathToShow = IndexPath(item: 0, section: 0)
-            self.collectionView.selectItem(at: indexPathToShow, animated: true, scrollPosition: .centeredHorizontally)
+            collectionView.selectItem(at: indexPathToShow, animated: true, scrollPosition: .centeredHorizontally)
         } else {
             let indexPathToShow = IndexPath(item: (index + 1), section: 0)
-            self.collectionView.selectItem(at: indexPathToShow, animated: true, scrollPosition: .centeredHorizontally)
+            collectionView.selectItem(at: indexPathToShow, animated: true, scrollPosition: .centeredHorizontally)
         }
     }
     
@@ -147,12 +145,12 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
     // MARK: - UICollectionViewDelegate & DataSource
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "slideCell", for: indexPath) as! ZKCarouselCell
-        cell.slide = self.slides[indexPath.item]
+        cell.slide = slides[indexPath.item]
         return cell
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.slides.count
+        return slides.count
     }
     
     public func numberOfSections(in collectionView: UICollectionView) -> Int {

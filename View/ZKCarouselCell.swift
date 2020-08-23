@@ -11,10 +11,10 @@ public class ZKCarouselCell: UICollectionViewCell {
     public var slide : ZKCarouselSlide? {
         didSet {
             guard let slide = slide else {
-                print("ZKCarousel could not parse the slide you provided. \n\(String(describing: self.slide))")
+                print("ZKCarousel could not parse the slide you provided.")
                 return
             }
-            self.parseData(forSlide: slide)
+            parseData(forSlide: slide)
         }
     }
     
@@ -23,7 +23,7 @@ public class ZKCarouselCell: UICollectionViewCell {
         iv.contentMode = .scaleAspectFill
         iv.backgroundColor = .clear
         iv.clipsToBounds = true
-        iv.addBlackGradientLayer(frame: self.bounds)
+        iv.addBlackGradientLayer(frame: bounds)
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
     }()
@@ -61,34 +61,34 @@ public class ZKCarouselCell: UICollectionViewCell {
     
     // MARK: - Actions
     private func setup() {
-        self.backgroundColor = .clear
-        self.clipsToBounds = true
+        backgroundColor = .clear
+        clipsToBounds = true
         
-        self.addSubview(self.imageView)
-        NSLayoutConstraint(item: self.imageView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self.imageView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self.imageView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 0).isActive = true
-        NSLayoutConstraint(item: self.imageView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: 0).isActive = true
+        contentView.addSubview(imageView)
+        imageView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        imageView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+        imageView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
         
-        self.addSubview(self.descriptionLabel)
-        let left = NSLayoutConstraint(item: descriptionLabel, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 15)
-        let right = NSLayoutConstraint(item: descriptionLabel, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: -15)
-        let bottom = NSLayoutConstraint(item: descriptionLabel, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 0.9, constant: 0)
-        let top = NSLayoutConstraint(item: descriptionLabel, attribute: .top, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1.25, constant: 0)
-        NSLayoutConstraint.activate([left, right, bottom, top])
+        contentView.addSubview(descriptionLabel)
+        descriptionLabel.topAnchor.constraint(equalTo: contentView.centerYAnchor, constant: 32).isActive = true
+        descriptionLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 16).isActive = true
+        descriptionLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -16).isActive = true
+        descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16).isActive = true
+    
         
-        self.addSubview(self.titleLabel)
-        NSLayoutConstraint(item: self.titleLabel, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 15).isActive = true
-        NSLayoutConstraint(item: self.titleLabel, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: -15).isActive = true
-        NSLayoutConstraint(item: self.titleLabel, attribute: .bottom, relatedBy: .equal, toItem: self.descriptionLabel, attribute: .top, multiplier: 1.0, constant: 8).isActive = true
-        NSLayoutConstraint(item: self.titleLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 43).isActive = true
+        contentView.addSubview(titleLabel)
+        titleLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 16).isActive = true
+        titleLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -16).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: descriptionLabel.topAnchor, constant: -8).isActive = true
+        titleLabel.heightAnchor.constraint(equalToConstant: 45).isActive = true
     }
     
     private func parseData(forSlide slide: ZKCarouselSlide) {
         
-        self.imageView.image = slide.slideImage
-        self.titleLabel.text = slide.slideTitle
-        self.descriptionLabel.text = slide.slideDescription
+        imageView.image = slide.image
+        titleLabel.text = slide.title
+        descriptionLabel.text = slide.description
     }
 
 }
