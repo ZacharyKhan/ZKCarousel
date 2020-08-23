@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZKCarousel'
-  s.version          = '1.0.3'
+  s.version          = '1.1.0'
   s.summary          = 'ZKCarousel is a simple carousel based on UICollectionView.'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ ZKCarousel is a simple carousel control built on top of a UICollectionView. It c
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'ZKCarousel/Classes/**/*'
+  s.source_files = 'ZKCarousel/**/*'
   
   # s.resource_bundles = {
   #   'ZKCarousel' => ['ZKCarousel/Assets/*.png']
