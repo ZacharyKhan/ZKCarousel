@@ -23,7 +23,9 @@ public class ZKCarouselCell: UICollectionViewCell {
         iv.contentMode = .scaleAspectFill
         iv.backgroundColor = .clear
         iv.clipsToBounds = true
-        iv.addBlackGradientLayer(frame: bounds)
+        if slide?.properties.shouldAddGradient ?? true {
+            iv.addBlackGradientLayer(frame: bounds)
+        }
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
     }()
@@ -85,8 +87,8 @@ public class ZKCarouselCell: UICollectionViewCell {
     }
     
     private func parseData(forSlide slide: ZKCarouselSlide) {
-        
         imageView.image = slide.image
+        imageView.contentMode = slide.properties.contentMode
         titleLabel.text = slide.title
         descriptionLabel.text = slide.description
     }
