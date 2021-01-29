@@ -6,6 +6,8 @@
 //
 
 public class ZKCarouselCell: UICollectionViewCell {
+
+    static let identifier = "slideCell"
     
     // MARK: - Properties
     public var slide : ZKCarouselSlide? {
@@ -75,8 +77,7 @@ public class ZKCarouselCell: UICollectionViewCell {
         descriptionLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 16).isActive = true
         descriptionLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -16).isActive = true
         descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16).isActive = true
-    
-        
+   
         contentView.addSubview(titleLabel)
         titleLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 16).isActive = true
         titleLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -16).isActive = true
@@ -85,7 +86,6 @@ public class ZKCarouselCell: UICollectionViewCell {
     }
     
     private func parseData(forSlide slide: ZKCarouselSlide) {
-        
         imageView.image = slide.image
         titleLabel.text = slide.title
         descriptionLabel.text = slide.description
