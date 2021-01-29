@@ -103,13 +103,8 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
         let visibleIndexPath: IndexPath = collectionView.indexPathForItem(at: visiblePoint) ?? IndexPath(item: 0, section: 0)
         let index = visibleIndexPath.item
 
-        if index == (slides.count-1) {
-            let indexPathToShow = IndexPath(item: 0, section: 0)
-            collectionView.selectItem(at: indexPathToShow, animated: true, scrollPosition: .centeredHorizontally)
-        } else {
-            let indexPathToShow = IndexPath(item: (index + 1), section: 0)
-            collectionView.selectItem(at: indexPathToShow, animated: true, scrollPosition: .centeredHorizontally)
-        }
+        let indexPathToShow = IndexPath(item: index == slides.count - 1 ? 0 : index + 1, section: 0)
+        collectionView.selectItem(at: indexPathToShow, animated: true, scrollPosition: .centeredHorizontally)
     }
     
     private func updateUI() {
@@ -144,7 +139,7 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
     
     // MARK: - UICollectionViewDelegate & DataSource
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "slideCell", for: indexPath) as! ZKCarouselCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ZKCarouselCell.identifier, for: indexPath) as! ZKCarouselCell
         cell.slide = slides[indexPath.item]
         return cell
     }
