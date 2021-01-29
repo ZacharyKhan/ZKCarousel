@@ -153,8 +153,7 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
-        return size
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
