@@ -5,17 +5,20 @@
 //  Created by Zachary Khan on 8/22/20.
 //
 
-public class ZKCarouselCell: UICollectionViewCell {
+import UIKit
 
-    static let identifier = "slideCell"
+public class ZKCarouselCell: UICollectionViewCell {
     
     // MARK: - Properties
+    static let identifier = "carousel_slide_default_Cell"
+    
     public var slide : ZKCarouselSlide? {
         didSet {
             guard let slide = slide else {
-                print("ZKCarousel could not parse the slide you provided.")
+                print("ZKCarousel is unable to parse the ZKCarouselSlide that was provided.")
                 return
             }
+            
             parseData(forSlide: slide)
         }
     }
@@ -33,7 +36,7 @@ public class ZKCarouselCell: UICollectionViewCell {
     private var titleLabel : UILabel = {
         let label = UILabel()
         label.adjustsFontSizeToFitWidth = true
-        label.font = UIFont.boldSystemFont(ofSize: 40)
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textColor = .white
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -42,7 +45,7 @@ public class ZKCarouselCell: UICollectionViewCell {
     
     private var descriptionLabel : UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 19)
+        label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .white
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -59,6 +62,13 @@ public class ZKCarouselCell: UICollectionViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    public override func prepareForReuse() {
+        super.prepareForReuse()
+        imageView.image = nil
+        titleLabel.text = nil
+        descriptionLabel.text = nil
     }
     
     // MARK: - Actions
