@@ -12,7 +12,10 @@ import UIKit
     func carouselDidScroll()
 }
 
-final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
+final public class ZKCarousel: UIView,
+                               UICollectionViewDelegateFlowLayout,
+                               UICollectionViewDelegate,
+                               UICollectionViewDataSource {
     
     // MARK: - Properties
     private var timer: Timer = Timer()
@@ -56,7 +59,7 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
         cv.delegate = self
         cv.dataSource = self
         cv.isPagingEnabled = true
-        cv.register(ZKCarouselCell.self, forCellWithReuseIdentifier: "slideCell")
+        cv.register(ZKCarouselCell.self, forCellWithReuseIdentifier: ZKCarouselCell.identifier)
         cv.clipsToBounds = true
         cv.backgroundColor = .clear
         cv.showsHorizontalScrollIndicator = false
@@ -104,7 +107,9 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
         let index = visibleIndexPath.item
 
         let indexPathToShow = IndexPath(item: index == slides.count - 1 ? 0 : index + 1, section: 0)
-        collectionView.selectItem(at: indexPathToShow, animated: true, scrollPosition: .centeredHorizontally)
+        collectionView.selectItem(at: indexPathToShow,
+                                  animated: true,
+                                  scrollPosition: .centeredHorizontally)
     }
     
     private func updateUI() {
@@ -139,7 +144,10 @@ final public class ZKCarousel: UIView, UICollectionViewDelegateFlowLayout, UICol
     
     // MARK: - UICollectionViewDelegate & DataSource
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ZKCarouselCell.identifier, for: indexPath) as! ZKCarouselCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ZKCarouselCell.identifier,
+                                                            for: indexPath) as? ZKCarouselCell else {
+                                                                return ZKCarouselCell()
+                                                            }
         cell.slide = slides[indexPath.item]
         return cell
     }
